@@ -1,0 +1,22 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    image: slims
+    ports:
+      - 81:80
+    volumes:
+      - .:/src/app
+    links:
+      - mysql
+  mysql:
+    image: mysql:5.6
+    ports:
+      - 13306:3306
+    environment:
+      MYSQL_DATABASE: library
+      MYSQL_USER: slims
+      MYSQL_PASSWORD: bs23
+      MYSQL_ROOT_PASSWORD: bs@2345678
