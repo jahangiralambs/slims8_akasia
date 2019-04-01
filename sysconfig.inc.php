@@ -53,7 +53,7 @@ if ((bool) ini_get('safe_mode')) {
 
 // set default timezone
 // for a list of timezone, please see PHP Manual at "List of Supported Timezones" section
-@date_default_timezone_set('Asia/Jakarta');
+@date_default_timezone_set('Asia/Dhaka');
 
 // senayan version
 define('SENAYAN_VERSION', 'SLiMS 8.3.1 (Akasia)');
@@ -260,10 +260,10 @@ $sysconf['barcode_encoding'] = $barcodes_encoding['code128'][0];
 $sysconf['quick_return'] = true;
 
 /* LOAN LIMIT OVERRIDE */
-$sysconf['loan_limit_override'] = false;
+$sysconf['loan_limit_override'] = true;
 
 /* LOAN DATE CHANGE IN CIRCULATION */
-$sysconf['allow_loan_date_change'] = false;
+$sysconf['allow_loan_date_change'] = true;
 
 /* CIRCULATION RELATED */
 $sysconf['circulation_receipt'] = false;
@@ -336,8 +336,8 @@ $sysconf['currencies'] = array( array('0', 'NONE'), 'Rupiah', 'USD', 'Euro', 'DM
 $sysconf['reserve_expire_periode'] = 7;
 
 /* CONTENT */
-$sysconf['library_name'] = 'Senayan';
-$sysconf['library_subname'] = 'Open Source Library Management System';
+$sysconf['library_name'] = 'Akhtar Hameed Khan Libray';
+$sysconf['library_subname'] = 'BARD, Kotbari Cumilla';
 $sysconf['page_footer'] = ' SENAYAN Library Automation System (SLiMS) - SLiMS Developer Community - Released Under GNU GPL License';
 
 /* HTTPS Setting */
@@ -466,10 +466,10 @@ $sysconf['mail']['enable'] = true;
 $sysconf['mail']['server'] = 'ssl://smtp.gmail.com:465'; // SMTP server
 $sysconf['mail']['server_port'] = 465; // the SMTP port
 $sysconf['mail']['auth_enable'] = true; // enable SMTP authentication
-$sysconf['mail']['auth_username'] = 'admin'; // SMTP account username
-$sysconf['mail']['auth_password'] = 'admin'; // SMTP account password
-$sysconf['mail']['from'] = 'admin@localhost';
-$sysconf['mail']['from_name'] = 'SLiMS Administrator';
+$sysconf['mail']['auth_username'] = 'brainstation23.test@gmail.com'; // SMTP account username
+$sysconf['mail']['auth_password'] = '123456Tt'; // SMTP account password
+$sysconf['mail']['from'] = 'brainstation23.test@gmail.com';
+$sysconf['mail']['from_name'] = 'BARD Library';
 $sysconf['mail']['reply_to'] = &$sysconf['mail']['from'];
 $sysconf['mail']['reply_to_name'] = &$sysconf['mail']['from_name'];
 
@@ -544,8 +544,8 @@ $sysconf['chat_system']['server_port']  = 9300;
 $sysconf['news']['num_each_page'] = 10;
 
 /* LIBRARY MAP COORDINATES */
-$sysconf['location']['lat'] = -7.977000;
-$sysconf['location']['long'] = 112.634025;
+$sysconf['location']['lat'] = 23.4352176;
+$sysconf['location']['long'] = 91.1325914;
 
 /* CHART */
 $sysconf['chart']['mode'] = 'chartjs'; // plot or chartjs. default is plot
