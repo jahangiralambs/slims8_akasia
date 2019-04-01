@@ -159,7 +159,7 @@ if (isset($_GET['action']) AND $_GET['action'] == 'print') {
   $html_str .= '<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />';
   $html_str .= '<meta http-equiv="Pragma" content="no-cache" /><meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, post-check=0, pre-check=0" /><meta http-equiv="Expires" content="Sat, 26 Jul 1997 05:00:00 GMT" />';
   $html_str .= '<style type="text/css">'."\n";
-  $html_str .= 'body { padding: 0; margin: 1cm; font-family: '.$sysconf['print']['barcode']['barcode_fonts'].'; font-size: '.$sysconf['print']['barcode']['barcode_font_size'].'pt; background: #fff; }'."\n";
+  $html_str .= 'body { padding: 0; margin: 0px; font-family: '.$sysconf['print']['barcode']['barcode_fonts'].'; font-size: '.$sysconf['print']['barcode']['barcode_font_size'].'pt; background: #fff; }'."\n";
   $html_str .= '.labelStyle { width: '.$sysconf['print']['barcode']['barcode_box_width'].'cm; height: '.$sysconf['print']['barcode']['barcode_box_height'].'cm; text-align: center; margin: '.$sysconf['print']['barcode']['barcode_items_margin'].'cm; border: '.$sysconf['print']['barcode']['barcode_border_size'].'px solid #000000;}'."\n";
   $html_str .= '.labelHeaderStyle { background-color: #CCCCCC; font-weight: bold; padding: 5px; margin-bottom: 5px; }'."\n";
   $html_str .= '</style>'."\n";
