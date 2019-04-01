@@ -69,7 +69,7 @@ $sysconf['print']['barcode']['barcode_scale'] = 98; // barcode scale in percent 
 $sysconf['print']['barcode']['barcode_border_size'] = 0; // in pixels
 
 // barcode generator print settings
-$sysconf['print']['barcodegen']['box_width'] = 4;
+$sysconf['print']['barcodegen']['box_width'] = 3.75;
 $sysconf['print']['barcodegen']['page_margin'] = 0.2;
 $sysconf['print']['barcodegen']['items_margin'] = 0.05;
 $sysconf['print']['barcodegen']['include_border'] = 0;
