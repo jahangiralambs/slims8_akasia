@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d680e30-76dc-4a13-877f-1d3c315eb3c6" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/admin/admin_template/printed_settings.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin_template/printed_settings.inc.php" afterDir="false" />
-    </list>
+    <list default="true" id="8d680e30-76dc-4a13-877f-1d3c315eb3c6" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +26,7 @@
           <entry key="html" value="1" />
           <entry key="ico" value="1" />
           <entry key="original" value="1" />
-          <entry key="php" value="21" />
+          <entry key="php" value="23" />
           <entry key="png" value="5" />
           <entry key="rb" value="1" />
           <entry key="yml" value="1" />
@@ -38,7 +36,7 @@
         <counts>
           <entry key="HTML" value="1" />
           <entry key="Image" value="6" />
-          <entry key="PHP" value="21" />
+          <entry key="PHP" value="23" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="YAML" value="1" />
         </counts>
@@ -66,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/admin_template/printed_settings.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="176" column="62" lean-forward="true" selection-start-line="176" selection-start-column="62" selection-end-line="176" selection-end-column="62" />
+            <state relative-caret-position="1336">
+              <caret line="175" column="43" lean-forward="true" selection-start-line="175" selection-start-column="43" selection-end-line="175" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -80,6 +78,24 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
               <caret line="17" column="27" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin/modules/bibliography/print_settings.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="131" column="39" selection-start-line="131" selection-start-column="39" selection-end-line="131" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/modules/bibliography/pop_print_settings.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -105,6 +121,8 @@
       <find>$extend_link</find>
       <find>loanHiddenForm</find>
       <find>print</find>
+      <find>print again</find>
+      <find>barcode</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,14 +181,14 @@
               <item name="slims8_akasia" type="b2602c69:ProjectViewProjectNode" />
               <item name="slims8_akasia" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="admin_template" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="slims8_akasia" type="b2602c69:ProjectViewProjectNode" />
               <item name="slims8_akasia" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="admin_template" type="462c0819:PsiDirectoryNode" />
-              <item name="default" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="bibliography" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="slims8_akasia" type="b2602c69:ProjectViewProjectNode" />
@@ -225,18 +243,18 @@
       <workItem from="1552996254203" duration="1019000" />
       <workItem from="1553749963888" duration="2606000" />
       <workItem from="1554014009952" duration="3059000" />
-      <workItem from="1554097907570" duration="2638000" />
+      <workItem from="1554097907570" duration="2868000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15485000" />
+    <option name="totallyTimeSpent" value="15715000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20917822" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20917822" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -248,7 +266,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.31528664" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.31528664" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -400,9 +418,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/bibliography/pop_print_settings.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/sysconfig.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -410,14 +425,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/bibliography/print_settings.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3302" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/admin_template/printed_settings.inc.php.original">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-627" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/admin_template/printed_settings.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1336">
+          <caret line="175" column="43" lean-forward="true" selection-start-line="175" selection-start-column="43" selection-end-line="175" selection-end-column="43" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/admin_template/printed_page_tpl.php">
@@ -427,10 +444,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/admin_template/printed_settings.inc.php">
+    <entry file="file://$PROJECT_DIR$/admin/modules/bibliography/pop_print_settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="176" column="62" lean-forward="true" selection-start-line="176" selection-start-column="62" selection-end-line="176" selection-end-column="62" />
+        <state relative-caret-position="221">
+          <caret line="30" column="43" lean-forward="true" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/modules/bibliography/print_settings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="131" column="39" selection-start-line="131" selection-start-column="39" selection-end-line="131" selection-end-column="39" />
         </state>
       </provider>
     </entry>
