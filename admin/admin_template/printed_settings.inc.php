@@ -58,18 +58,18 @@ $sysconf['print']['label']['border_size'] = 1; // in pixels
 $sysconf['print']['barcode']['barcode_page_margin'] = 0.2;
 $sysconf['print']['barcode']['barcode_items_per_row'] = 1;
 $sysconf['print']['barcode']['barcode_items_margin'] = 0.1;
-$sysconf['print']['barcode']['barcode_box_width'] = 5;
-$sysconf['print']['barcode']['barcode_box_height'] = 4;
+$sysconf['print']['barcode']['barcode_box_width'] = 4;
+$sysconf['print']['barcode']['barcode_box_height'] = 3;
 $sysconf['print']['barcode']['barcode_include_header_text'] = 0; // change to 0 if dont want to use header in each barcode
 $sysconf['print']['barcode']['barcode_cut_title'] = 50; // maximum characters in title to appear in each barcode. change to 0 if you dont want the title cutted
 $sysconf['print']['barcode']['barcode_header_text'] = ''; // keep empty if you want to use Library Name as a header text
 $sysconf['print']['barcode']['barcode_fonts'] = "Arial, Verdana, Helvetica, 'Trebuchet MS'"; // font to use
 $sysconf['print']['barcode']['barcode_font_size'] = 11;
-$sysconf['print']['barcode']['barcode_scale'] = 90; // barcode scale in percent relative to box width and height
+$sysconf['print']['barcode']['barcode_scale'] = 98; // barcode scale in percent relative to box width and height
 $sysconf['print']['barcode']['barcode_border_size'] = 0; // in pixels
 
 // barcode generator print settings
-$sysconf['print']['barcodegen']['box_width'] = 4;
+$sysconf['print']['barcodegen']['box_width'] = 5;
 $sysconf['print']['barcodegen']['page_margin'] = 0.2;
 $sysconf['print']['barcodegen']['items_margin'] = 0.05;
 $sysconf['print']['barcodegen']['include_border'] = 0;
