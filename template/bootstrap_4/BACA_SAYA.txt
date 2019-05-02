@@ -1,0 +1,55 @@
+DETAIL THEME
+==========================
+Opac Template Bootstrap 4 for Akasia 8.x.x
+Dimodifikasi dari template default Akasia
+Modified by: Hasan Syaiful Rizal
+Email: hsr@yudharta.ac.id
+Facebook: www.facebook.com/fb.hsr
+Blog: http://hsr-share.blogspot.com
+
+
+MODIFIKASI
+==========================
+- semula menggunakan bootstrap 3, diganti dengan bootstrap 4 beta
+- Setting default template ini saya buat tanpa gambar latar (background), tujuannya agar lebih ringan
+- perubahan css warna gradasi untuk pilihan warna background
+- perubahan css pada BiblioRecord terutama untuk kenyamanan pada mode mobile, dan animasi slide up tidak dipakai
+- perubahan ukuran s-footer dan hover animation
+- s-feature (Promoted Books) dipisah dari s-footer, dan dijadikan satu file php tersendiri (feature.php), dan animasi Cover Shake diganti dengan animasi scale, background s-feature dibuang, agar lebih clean
+- perubahan pada css advance-search agar lebih nyaman untuk mode mobile
+- perubahan pada detail_template.php terutama untuk bagian detail record
+- class s-menu pada style.css dan file nav.php dihapus
+- perubahan menu Language Select yang semula ada pada s-menu, dipindah ke area footer, dan disesuaikan css-nya.
+- menu utama dibuat fixed-transparent dengan scroll bacground dan jadi satu dengan header
+- perubahan css pada Librarian Login dan Member Login
+- penambahan class footer-upper untuk menampung link-link penting
+- penambahan back-to-top link
+- file jpg dan png di-minify, agar lebih ringan dan cepat proses loadingnya.
+- etc.
+
+
+INSTALLATION
+==========================
+- Ekstrak file zip yang sudah diunduh
+- Copy folder hasil ekstrak tadi, lalu paste ke folder template Opac Akasia
+- Masuk ke halaman login pustakawan (Librarian Login)
+- Untuk Akasia 8.3, klik menu system, lalu pilih tampilan template pengguna dengan template ini (Bootstrap_4)
+- Untuk Akasia 8.3.1, klik menu System>Theme, lalu aktifkan template Bootstrap_4
+- Done... 
+
+
+DEMO
+==========================
+https://perpustakaan.yudharta.ac.id/katalog
+(dengan beberapa kustomisasi namun agak mirip-mirip dengan template yang Bootstrap_4 ini) 
+
+
+MORE INFO
+==========================
+http://hsr-share.blogspot.com/2018/02/template-opac-slims-akasia-bootstrap-4.html
+
+
+NOTE
+==========================
+Mohon jangan dihapus link creditnya.
+Jika ingin link kreditnya dihapus, silakan kontak ke hsr@yudharta.ac.id atau www.facebook.com/fb.hsr
