@@ -1,1 +1,0 @@
-# Stack OPAC Template
