@@ -526,17 +526,18 @@ if (!$is_member_login) {
     /* callback function to show overdue */
     function showOverdue($obj_db, $array_data)
     {
+        $arrayIndex = $_SESSION['m_can_extend'] == 'yes' ? 4 : 3;
         $_curr_date = date('Y-m-d');
-        if (simbio_date::compareDates($array_data[4], $_curr_date) == $_curr_date) {
-            return '<strong style="color: #f00;">' . $array_data[4] . ' ' . __('OVERDUED') . '</strong>';
+        if (simbio_date::compareDates($array_data[$arrayIndex], $_curr_date) == $_curr_date) {
+            return '<strong style="color: #f00;">' . $array_data[$arrayIndex] . ' ' . __('OVERDUED') . '</strong>';
         } else {
-            return $array_data[4];
+            return $array_data[$arrayIndex];
         }
     }
 
     function setExtend($obj_db, $array_data)
     {
-        return '<a href="#" onclick="confirmProcess('.$array_data[0].', \''.$array_data['1'].'\', \'extend\')" title="'.__('Extend loan for this item').'" class="extendLink">Extend</a>';
+        return '<a href="#" onclick="confirmProcess(' . $array_data[0] . ', \'' . $array_data['1'] . '\', \'extend\')" title="' . __('Extend loan for this item') . '" class="extendLink">Extend</a>';
     }
 
 
@@ -564,17 +565,29 @@ if (!$is_member_login) {
         $_loan_list = new simbio_datagrid();
         $_loan_list->disable_paging = true;
         $_loan_list->table_ID = 'loanlist';
-        $_loan_list->setSQLColumn('l.loan_id as A, l.item_code AS \'' . __('Item Code') . '\'',
-            'b.title AS \'' . __('Title') . '\'',
-            'l.loan_date AS \'' . __('Loan Date') . '\'',
-            'l.due_date AS \'' . __('Due Date') . '\'');
+        if ($_SESSION['m_can_extend'] == 'yes') {
+            $_loan_list->setSQLColumn('l.loan_id as Extend, l.item_code AS \'' . __('Item Code') . '\'',
+                'b.title AS \'' . __('Title') . '\'',
+                'l.loan_date AS \'' . __('Loan Date') . '\'',
+                'l.due_date AS \'' . __('Due Date') . '\'');
+        } else {
+            $_loan_list->setSQLColumn('l.item_code AS \'' . __('Item Code') . '\'',
+                'b.title AS \'' . __('Title') . '\'',
+                'l.loan_date AS \'' . __('Loan Date') . '\'',
+                'l.due_date AS \'' . __('Due Date') . '\'');
+        }
         $_loan_list->setSQLorder('l.loan_date DESC');
         $_criteria = sprintf('m.member_id=\'%s\' AND l.is_lent=1 AND is_return=0 ', $_SESSION['mid']);
         $_loan_list->setSQLCriteria($_criteria);
 
         // modify column value
-        $_loan_list->modifyColumnContent(4, 'callback{showOverdue}');
-        $_loan_list->modifyColumnContent(0, 'callback{setExtend}');
+        if ($_SESSION['m_can_extend'] == 'yes') {
+            $_loan_list->modifyColumnContent(4, 'callback{showOverdue}');
+            $_loan_list->modifyColumnContent(0, 'callback{setExtend}');
+        } else {
+            $_loan_list->modifyColumnContent(3, 'callback{showOverdue}');
+        }
+
         // set table and table header attributes
         $_loan_list->table_attr = 'align="center" class="memberLoanList" cellpadding="5" cellspacing="0"';
         $_loan_list->table_header_attr = 'class="dataListHeader" style="font-weight: bold;"';
