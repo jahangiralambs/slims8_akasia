@@ -537,7 +537,12 @@ if (!$is_member_login) {
 
     function setExtend($obj_db, $array_data)
     {
-        return '<a href="#" onclick="confirmProcess(' . $array_data[0] . ', \'' . $array_data['1'] . '\', \'extend\')" title="' . __('Extend loan for this item') . '" class="extendLink">Extend</a>';
+        $reborrowLimit = (int) $_SESSION['m_reborrow_limit'];
+        $renewed = (int) $array_data[5];
+        if ($reborrowLimit > 0 && ($reborrowLimit > $renewed))
+            return '<a href="#" onclick="confirmProcess(' . $array_data[0] . ', \'' . $array_data['1'] . '\', \'extend\')" title="' . __('Extend loan for this item') . '" class="extendLink">Extend</a>';
+
+        return 'Already Extended';
     }
 
 
@@ -569,7 +574,7 @@ if (!$is_member_login) {
             $_loan_list->setSQLColumn('l.loan_id as Extend, l.item_code AS \'' . __('Item Code') . '\'',
                 'b.title AS \'' . __('Title') . '\'',
                 'l.loan_date AS \'' . __('Loan Date') . '\'',
-                'l.due_date AS \'' . __('Due Date') . '\'');
+                'l.due_date AS \'' . __('Due Date') . '\'', 'l.renewed as renewed');
         } else {
             $_loan_list->setSQLColumn('l.item_code AS \'' . __('Item Code') . '\'',
                 'b.title AS \'' . __('Title') . '\'',
@@ -584,6 +589,7 @@ if (!$is_member_login) {
         if ($_SESSION['m_can_extend'] == 'yes') {
             $_loan_list->modifyColumnContent(4, 'callback{showOverdue}');
             $_loan_list->modifyColumnContent(0, 'callback{setExtend}');
+            $_loan_list->invisible_fields = [5];
         } else {
             $_loan_list->modifyColumnContent(3, 'callback{showOverdue}');
         }

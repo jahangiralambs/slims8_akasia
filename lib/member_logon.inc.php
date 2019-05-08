@@ -169,7 +169,7 @@ class member_logon
         */
         $_sql_member_login = sprintf("SELECT m.member_id, m.member_name, m.mpasswd, m.inst_name,
             m.member_email, m.expire_date, m.register_date, m.is_pending, m.can_extend,
-            m.member_type_id, mt.member_type_name, mt.enable_reserve, mt.reserve_limit
+            m.member_type_id, mt.member_type_name, mt.enable_reserve, mt.reserve_limit, mt.reborrow_limit
             FROM member AS m LEFT JOIN mst_member_type AS mt ON m.member_type_id=mt.member_type_id
             WHERE m.member_id='%s'", $this->obj_db->escape_string($this->username));
         $_member_q = $this->obj_db->query($_sql_member_login);
@@ -229,6 +229,7 @@ class member_logon
         $_SESSION['m_mark_biblio'] = array();
         $_SESSION['m_can_reserve'] = $this->user_info['enable_reserve'];
         $_SESSION['m_reserve_limit'] = $this->user_info['reserve_limit'];
+        $_SESSION['m_reborrow_limit'] = $this->user_info['reborrow_limit'];
         $_SESSION['m_can_extend'] = $this->user_info['can_extend'];
         // check member expiry date
         require_once SIMBIO.'simbio_UTILS/simbio_date.inc.php';
