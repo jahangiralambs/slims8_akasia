@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8d680e30-76dc-4a13-877f-1d3c315eb3c6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/contents/member.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/contents/member.inc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/member_logon.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/lib/member_logon.inc.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,14 +42,7 @@
         <item name="library" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="library: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="loan: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="library" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="library: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="mst_member_type: table" type="98d5ac3d:MysqlImplModel$Table" />
+        <item name="member: table" type="98d5ac3d:MysqlImplModel$Table" />
       </path>
     </expand>
     <select />
@@ -60,19 +51,20 @@
     <session id="5166092">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="3" />
-          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.open.time.41" value="1" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -84,11 +76,11 @@
           <entry key="ico" value="1" />
           <entry key="loan" value="1" />
           <entry key="md" value="1" />
-          <entry key="member" value="1" />
+          <entry key="member" value="2" />
           <entry key="member_custom" value="1" />
           <entry key="mst_member_type" value="1" />
           <entry key="original" value="1" />
-          <entry key="php" value="75" />
+          <entry key="php" value="77" />
           <entry key="png" value="5" />
           <entry key="rb" value="1" />
           <entry key="sql" value="2" />
@@ -98,11 +90,11 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="Database Element" value="4" />
+          <entry key="Database Element" value="5" />
           <entry key="HTML" value="3" />
           <entry key="Image" value="6" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="75" />
+          <entry key="PHP" value="77" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Scratch" value="2" />
           <entry key="SmartyConfig" value="1" />
@@ -113,7 +105,7 @@
         <counts>
           <entry key="conf" value="3" />
           <entry key="php" value="1497" />
-          <entry key="sql" value="17" />
+          <entry key="sql" value="54" />
           <entry key="txt" value="7" />
         </counts>
       </usages-collector>
@@ -121,7 +113,7 @@
         <counts>
           <entry key="PHP" value="1497" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="SQL" value="17" />
+          <entry key="SQL" value="54" />
           <entry key="SmartyConfig" value="3" />
         </counts>
       </usages-collector>
@@ -137,14 +129,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/modules/circulation/loan_list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10">
-              <caret line="120" column="165" lean-forward="true" selection-start-line="120" selection-start-column="165" selection-end-line="120" selection-end-column="165" />
-              <folding>
-                <element signature="n#style#0;n#strong#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="2941">
+              <caret line="190" column="38" selection-start-line="190" selection-start-column="38" selection-end-line="190" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/modules/membership/overdue_mail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/modules/membership/member_base_lib.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="198" column="25" lean-forward="true" selection-start-line="198" selection-start-column="25" selection-end-line="198" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -167,11 +171,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/contents/member.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="545" column="5" lean-forward="true" selection-start-line="545" selection-start-column="5" selection-end-line="545" selection-end-column="5" />
+            <state relative-caret-position="613">
+              <caret line="545" column="5" selection-start-line="545" selection-start-column="5" selection-end-line="545" selection-end-column="5" />
               <folding>
                 <element signature="e#9561#10648#0#PHP" />
                 <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
@@ -192,8 +196,8 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://537000f2-3a7e-4baf-9f04-18bfae334e1d/schema/library/table/loan">
+      <file pinned="false" current-in-tab="true">
+        <entry file="das://537000f2-3a7e-4baf-9f04-18bfae334e1d/schema/library/table/member">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -204,7 +208,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/member_logon.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
+            <state relative-caret-position="3587">
               <caret line="231" column="35" selection-start-line="231" selection-start-column="19" selection-end-line="231" selection-end-column="35" />
             </state>
           </provider>
@@ -223,7 +227,7 @@
         <entry file="file://$PROJECT_DIR$/docker-compose.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -312,7 +316,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -353,6 +356,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -410,21 +414,21 @@
       <workItem from="1557045373307" duration="6025000" />
       <workItem from="1557121767595" duration="2454000" />
       <workItem from="1557202854043" duration="2435000" />
-      <workItem from="1557292169579" duration="8260000" />
+      <workItem from="1557292169579" duration="10139000" />
+      <workItem from="1557377125833" duration="3403000" />
+      <workItem from="1557633242820" duration="3148000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84953000" />
+    <option name="totallyTimeSpent" value="93383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17449306" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.178762" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.32908705" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32908705" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -437,6 +441,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.25265393" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32908705" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -450,9 +455,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/template/printed.style.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/admin_template/notemplate_page_tpl.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -615,13 +617,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/membership/member_base_lib.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2478">
-          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/modules/circulation/circulation_base_lib.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-238">
@@ -657,13 +652,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/default/session.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/1fa1900a-5418-4219-b181-7c76bd97a637/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -681,34 +669,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://537000f2-3a7e-4baf-9f04-18bfae334e1d/schema/library/table/member">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://537000f2-3a7e-4baf-9f04-18bfae334e1d/schema/library/table/member_custom">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="das://537000f2-3a7e-4baf-9f04-18bfae334e1d/schema/library/table/member_custom" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/537000f2-3a7e-4baf-9f04-18bfae334e1d/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simbio2/simbio_UTILS/simbio_date.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="613">
           <caret line="140" column="27" selection-start-line="140" selection-start-column="27" selection-end-line="140" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/modules/circulation/loan_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2941">
+          <caret line="190" column="38" selection-start-line="190" selection-start-column="38" selection-end-line="190" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/modules/membership/overdue_mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -719,10 +701,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://537000f2-3a7e-4baf-9f04-18bfae334e1d/schema/library/table/loan">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/admin/default/session.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/member_logon.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3587">
+          <caret line="231" column="35" selection-start-line="231" selection-start-column="19" selection-end-line="231" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -733,30 +722,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/member_logon.inc.php">
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="231" column="35" selection-start-line="231" selection-start-column="19" selection-end-line="231" selection-end-column="35" />
+        <state relative-caret-position="221">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/modules/circulation/loan_list.php">
+    <entry file="file://$PROJECT_DIR$/admin/modules/membership/member_base_lib.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="120" column="165" lean-forward="true" selection-start-line="120" selection-start-column="165" selection-end-line="120" selection-end-column="165" />
-          <folding>
-            <element signature="n#style#0;n#strong#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="289">
+          <caret line="198" column="25" lean-forward="true" selection-start-line="198" selection-start-column="25" selection-end-line="198" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://537000f2-3a7e-4baf-9f04-18bfae334e1d/schema/library/table/loan">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/contents/member.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="545" column="5" lean-forward="true" selection-start-line="545" selection-start-column="5" selection-end-line="545" selection-end-column="5" />
+        <state relative-caret-position="613">
+          <caret line="545" column="5" selection-start-line="545" selection-start-column="5" selection-end-line="545" selection-end-column="5" />
           <folding>
             <element signature="e#9561#10648#0#PHP" />
             <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
@@ -773,6 +763,13 @@
             <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://537000f2-3a7e-4baf-9f04-18bfae334e1d/schema/library/table/member">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
