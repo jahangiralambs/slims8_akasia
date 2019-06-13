@@ -140,6 +140,14 @@ include "partials/nav.php";
         <hr/>
         <p><?php echo (utility::isMemberLogin()) ? $header_info : $info; ?></p>
         <br/>
+          <?php echo (utility::isMemberLogin()) ?'  <div>
+              <h4>Access to Global Online Research in Agriculture (AGORA)</h4>
+              <p>User Name: ag-bgd021</p>
+              <p>Password: k3mgBN4E</p>
+              <p><a href="http://www.aginternetwork.org/en" target="_blank">Click here to visit</a> </p>
+          </div>'
+              : ''; ?>
+
 
         <!-- Show if clustering search is enabled
         ============================================= -->
