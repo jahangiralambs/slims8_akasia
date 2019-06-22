@@ -63,6 +63,8 @@
 <!-- Style Minified
 ============================================= -->
 <link rel="stylesheet" type="text/css" href="<?php echo CURRENT_TEMPLATE_DIR; ?>/css/style.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo CURRENT_TEMPLATE_DIR; ?>/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="<?php echo CURRENT_TEMPLATE_DIR; ?>/css/bootstrap-theme.min.css" />
 
 <!-- Script
 ============================================= -->
@@ -74,3 +76,4 @@
 <script src="<?php echo JWB; ?>fancywebsocket.js"></script>
 <script src="<?php echo JWB; ?>colorbox/jquery.colorbox-min.js"></script>
 <script src="<?php echo CURRENT_TEMPLATE_DIR; ?>js/bootstrap-dropdown.min.js"></script>
+<script src="<?php echo CURRENT_TEMPLATE_DIR; ?>js/bootstrap-crousal.min.js"></script>

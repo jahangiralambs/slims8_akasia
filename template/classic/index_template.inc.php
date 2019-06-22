@@ -58,6 +58,9 @@ Load content
 */
 include 'part/content/library-name.php';
 include 'part/content/nav.php';
+if (!count($_GET)) {
+    include 'part/banner.php';
+}
 
 // open row for grouping
 include 'part/content/row_open.php';

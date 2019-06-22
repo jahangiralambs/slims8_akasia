@@ -9,42 +9,42 @@
 ?>
 
 <main class="slims-8">
-	<?php 
+    <?php
 
-	include 'content/simple-search.php';
+    include 'content/simple-search.php';
 
-	if(( isset($_GET['search']) || isset($_GET['title']) || isset($_GET['keywords']) || isset($_GET['p']))) {
-		if (isset($_GET['search'])) {
-			/*
-			=========================
-			result search
-			=========================
-			*/
-			include 'content/search_result_info.php';
-			
-			echo '<div class="slims-container slims-card slims-card--default slims-biblio-list">';
-			echo $main_content;
-			echo '</div>';
-		} else {
-			if ($_GET['p'] === 'member') {
-				// hack member layout
-				echo '<div>';
-			}
+    if ((isset($_GET['search']) || isset($_GET['title']) || isset($_GET['keywords']) || isset($_GET['p']))) {
+        if (isset($_GET['search'])) {
+            /*
+            =========================
+            result search
+            =========================
+            */
+            include 'content/search_result_info.php';
 
-			include 'content/other-page.php';
-		}
-	} else {
-		/*
-		=========================
-		home page
-		=========================
-		*/
-		if ($sysconf['enable_promote_titles']) {
-			include 'content/promoted-books.php';
-		} else {
-			include 'content/new-books.php';
-		}
-	}
+            echo '<div class="slims-container slims-card slims-card--default slims-biblio-list">';
+            echo $main_content;
+            echo '</div>';
+        } else {
+            if ($_GET['p'] === 'member') {
+                // hack member layout
+                echo '<div>';
+            }
 
-	?>
+            include 'content/other-page.php';
+        }
+    } else {
+        /*
+        =========================
+        home page
+        =========================
+        */
+        if ($sysconf['enable_promote_titles']) {
+            include 'content/promoted-books.php';
+        }
+        include 'content/new-books.php';
+
+    }
+
+    ?>
 </main>
