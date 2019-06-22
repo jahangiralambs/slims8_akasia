@@ -60,12 +60,12 @@ $menus = array (
           'text'  => __('Librarian LOGIN')
           ),
         'link3' => array(
-          'url'   => '#',
-          'text'  => 'Link'
+          'url'   => 'http://www.bard.gov.bd/',
+          'text'  => 'BARD Website'
           ),
         'link4' => array(
           'url'   => '#',
-          'text'  => 'Link'
+          'text'  => 'BARD Publications'
           )
         )
       )

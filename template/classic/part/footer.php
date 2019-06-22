@@ -11,7 +11,10 @@ if (!(isset($_GET['p']) && ($_GET['p'] == 'login' || $_GET['p'] == 'visitor'))) 
 
 <footer class="slims-row">
     <div class="slims-12">
-        <div class="slims-card slims-card--default">Template by "Ido Alit" &copy; 2015</div>
+        <div class="slims-card slims-card--default">
+            Maintained By JV of <a href="https://brainstation-23.com">Brainstation 23 LTD</a> and
+            <a href="https://inflack.com">Inflack LTD</a>
+        </div>
     </div>
 </footer>
 
