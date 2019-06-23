@@ -195,7 +195,8 @@ class biblio_list extends biblio_list_model {
           case 'publishyear' :
             if ($_b == '-') {
               $_sql_criteria .= ' biblio.publish_year!=\''.$_q.'\'';
-            } else { $_sql_criteria .= ' biblio.publish_year=\''.$_q.'\''; }
+//            } else { $_sql_criteria .= ' biblio.publish_year=\''.$_q.'\''; }
+            } else { $_sql_criteria .= $this->processPublishYear($_q); }
             break;
           case 'gmd' :
             $_subquery = 'SELECT gmd_id FROM mst_gmd WHERE gmd_name=\''.$_q.'\'';
@@ -220,6 +221,26 @@ class biblio_list extends biblio_list_model {
 
     $this->criteria = array('sql_criteria' => $_sql_criteria, 'searched_fields' => $_searched_fields);
     return $this->criteria;
+  }
+
+  private function processPublishYear($data)
+  {
+      $criteria = '';
+      $years = explode('-', $data);
+      $startYear = (int)$years[0];
+      $endYear = isset($years[1]) ? (int)$years[1] : (int)$startYear;
+      if ($startYear < $endYear) {
+          $yearArr = array();
+          for ($year = $startYear; $year <= $endYear; $year++) {
+              array_push($yearArr, (string)$year);
+          }
+          $yearStr = implode(',', $yearArr);
+
+          $criteria = ' biblio.publish_year IN ('.$yearStr.')';
+      } else {
+          $criteria = ' biblio.publish_year=\''.$startYear.'\'';
+      }
+      return $criteria;
   }
 
 

@@ -80,7 +80,7 @@ if (isset($_GET['search']) && !empty($_GET['search'])) {
   // advanced search
   $is_adv = isset($_GET['title']) || isset($_GET['author']) || isset($_GET['isbn'])
     || isset($_GET['subject']) || isset($_GET['location'])
-    || isset($_GET['gmd']) || isset($_GET['colltype']) || isset($_GET['publisher']) || isset($_GET['callnumber']);
+    || isset($_GET['gmd']) || isset($_GET['colltype']) || isset($_GET['publisher']) || isset($_GET['publishyear']) || isset($_GET['callnumber']);
   if ($is_adv) {
     $title = '';
     if (isset($_GET['title'])) {
@@ -98,6 +98,10 @@ if (isset($_GET['search']) && !empty($_GET['search'])) {
     if (isset($_GET['isbn'])) {
       $isbn = trim(strip_tags(urldecode($_GET['isbn'])));
     }
+    $publishyear = '';
+      if (isset($_GET['publishyear'])) {
+          $publishyear = trim(strip_tags(urldecode($_GET['publishyear'])));
+      }
     $gmd = '';
     if (isset($_GET['gmd'])) {
       $gmd = trim(strip_tags(urldecode($_GET['gmd'])));
@@ -119,12 +123,13 @@ if (isset($_GET['search']) && !empty($_GET['search'])) {
       $callnumber = trim(strip_tags(urldecode($_GET['callnumber'])));
     }
     // don't do search if all search field is empty
-    if ($title || $author || $subject || $isbn || $gmd || $colltype || $location || $publisher || $callnumber) {
+    if ($title || $author || $subject || $isbn || $gmd || $colltype || $location || $publisher || $publishyear || $callnumber) {
       $criteria = '';
       if ($title) { $criteria .= ' title='.$title; }
       if ($author) { $criteria .= ' author='.$author; }
       if ($subject) { $criteria .= ' subject='.$subject; }
       if ($isbn) { $criteria .= ' isbn='.$isbn; }
+      if ($publishyear) { $criteria .= ' publishyear='.$publishyear; }
       if ($gmd) { $criteria .= ' gmd="'.$gmd.'"'; }
       if ($colltype) { $criteria .= ' colltype="'.$colltype.'"'; }
       if ($location) { $criteria .= ' location="'.$location.'"'; }
@@ -159,6 +164,7 @@ if (isset($_GET['search']) && !empty($_GET['search'])) {
     if ($colltype) { $search_result_info .= 'Collection Type : <strong><cite>'.$colltype.'</cite></strong>, '; }
     if ($location) { $search_result_info .= 'Location : <strong><cite>'.$location.'</cite></strong>, '; }
     if ($publisher) { $search_result_info .= 'Publisher : <strong><cite>'.$publisher.'</cite></strong>, '; }
+    if ($publishyear) { $search_result_info .= 'Publish Year : <strong><cite>'.$publishyear.'</cite></strong>, '; }
     if ($callnumber) { $search_result_info .= 'Call Number : <strong><cite>'.$callnumber.'</cite></strong>, '; }
     // strip last comma
     $search_result_info = substr_replace($search_result_info, '', -2);

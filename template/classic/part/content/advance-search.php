@@ -43,6 +43,18 @@
                 <input type="text" name="isbn" />
               </div>
             </div>
+              <div class="control-group">
+                  <label class="control-label"><?php echo __('Publisher'); ?></label>
+                  <div class="controls">
+                      <input type="text" name="publisher" />
+                  </div>
+              </div>
+              <div class="control-group">
+                  <label class="control-label"><?php echo __('Publishing Year'); ?></label>
+                  <div class="controls">
+                      <input type="text" placeholder="Ex. 1980 or 1980-1990" name="publishyear" />
+                  </div>
+              </div>
           </div>
           <div class="span6">
 
