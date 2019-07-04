@@ -473,6 +473,14 @@ $sysconf['mail']['from_name'] = 'BARD Library';
 $sysconf['mail']['reply_to'] = &$sysconf['mail']['from'];
 $sysconf['mail']['reply_to_name'] = &$sysconf['mail']['from_name'];
 
+/*
+ * Mail to librarian
+ */
+$sysconf['mail']['librarian'] = 's_shahria@yahoo.com';
+$sysconf['mail']['libhead'] = 'irin_bard@yahoo.com';
+
+
+
 /**
  * Maximum biblio mark for member
  */

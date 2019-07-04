@@ -402,9 +402,9 @@ if (!$is_member_login) {
         $_mail->SetFrom($sysconf['mail']['from'], $sysconf['mail']['from_name']);
         $_mail->AddReplyTo($sysconf['mail']['reply_to'], $sysconf['mail']['reply_to_name']);
         // send carbon copy off reserve e-mail to member/requester
-        $_mail->AddCC($_SESSION['m_email'], $_SESSION['m_name']);
+        $_mail->AddCC($sysconf['mail']['libhead'], 'Irin Parvin');
         // send reservation e-mail to librarian
-        $_mail->AddAddress($sysconf['mail']['from'], $sysconf['mail']['from_name']);
+        $_mail->AddAddress($sysconf['mail']['librarian'], 'Sharmin Shahria');
         // additional recipient
         if (isset($sysconf['mail']['add_recipients'])) {
             foreach ($sysconf['mail']['add_recipients'] as $_recps) {
