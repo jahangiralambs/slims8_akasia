@@ -473,6 +473,9 @@ $sysconf['mail']['from_name'] = 'BARD Library';
 $sysconf['mail']['reply_to'] = &$sysconf['mail']['from'];
 $sysconf['mail']['reply_to_name'] = &$sysconf['mail']['from_name'];
 
+$sysconf['mail']['to'] = 'bard_library@yahoo.com';
+$sysconf['mail']['to_name'] = 'BARD Library';
+
 /**
  * Maximum biblio mark for member
  */

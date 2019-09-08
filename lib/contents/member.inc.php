@@ -404,7 +404,7 @@ if (!$is_member_login) {
         // send carbon copy off reserve e-mail to member/requester
         $_mail->AddCC($_SESSION['m_email'], $_SESSION['m_name']);
         // send reservation e-mail to librarian
-        $_mail->AddAddress($sysconf['mail']['from'], $sysconf['mail']['from_name']);
+        $_mail->AddAddress($sysconf['mail']['to'], $sysconf['mail']['to_name']);
         // additional recipient
         if (isset($sysconf['mail']['add_recipients'])) {
             foreach ($sysconf['mail']['add_recipients'] as $_recps) {
