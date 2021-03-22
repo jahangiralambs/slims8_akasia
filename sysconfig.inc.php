@@ -463,11 +463,11 @@ if ($sysconf['captcha']['member']['enable']) {
  * Mailing Settings
  */
 $sysconf['mail']['enable'] = true;
-$sysconf['mail']['server'] = 'ssl://smtp.gmail.com:465'; // SMTP server
-$sysconf['mail']['server_port'] = 465; // the SMTP port
+$sysconf['mail']['server'] = 'smtp.gmail.com'; // SMTP server
+$sysconf['mail']['server_port'] = 587; // the SMTP port
 $sysconf['mail']['auth_enable'] = true; // enable SMTP authentication
-$sysconf['mail']['auth_username'] = 'brainstation23.test@gmail.com'; // SMTP account username
-$sysconf['mail']['auth_password'] = '123456Tt'; // SMTP account password
+$sysconf['mail']['auth_username'] = 'bard.erp.contact@gmail.com '; // SMTP account username
+$sysconf['mail']['auth_password'] = 'bs_23@ErpBard'; // SMTP account password
 $sysconf['mail']['from'] = 'brainstation23.test@gmail.com';
 $sysconf['mail']['from_name'] = 'BARD Library';
 $sysconf['mail']['reply_to'] = &$sysconf['mail']['from'];
